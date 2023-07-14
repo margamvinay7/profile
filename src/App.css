@@ -1,38 +1,135 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.tagline {
+	padding-block: 20px;
+	transition: 0.2s all ease-in-out;
+	font-weight: bolder !important;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	-webkit-text-stroke-width: 0.8px;
+	-webkit-text-stroke-color: #111;
+	transition-delay: 2s;
+}
+
+.tagline:hover {
+	font-size: 60px;
+	transition: 0.5s all ease-in-out;
+	color: rgb(255, 195, 195);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	-webkit-text-stroke-width: 0.8px;
+	-webkit-text-stroke-color: #111;
+}
+
+.tagline::before,
+.tagline::after {
+	content: '"';
+}
+
+.work-card-container {
+	display: flex;
+	gap: 20px;
+}
+
+.work-card-container .icon-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	transition: 1s all ease-in;
+	animation: entrance 3s ease-in-out forwards;
+}
+
+@keyframes entrance {
+	0% {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+	50% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.work-card-container .icon-container .icon {
+	border-radius: 50%;
+	background-color: #282c34;
+	padding: 8px;
+}
+
+.work-card-container .icon-container .icon:hover {
+	background-color: rgb(251, 133, 0);
+	color: white !important;
+}
+
+.animate {
+	animation-duration: 0.5s;
+	animation-name: animate-fade;
+	animation-delay: 0.5s;
+	animation-fill-mode: backwards;
+}
+
+@keyframes animate-fade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.work-card-container .icon-container .icon {
+		position: absolute;
+		top: 34px;
+		height: 1.5em;
+		width: 1.5em;
+	}
+	.icon-container {
+		z-index: 999;
+	}
+
+	.work-card-container {
+		display: flex;
+		position: relative;
+		flex-direction: column;
+	}
 }

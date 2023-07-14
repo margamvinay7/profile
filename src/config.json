@@ -1,56 +1,80 @@
 [
-    {
-        "id": "paasify",
-        "title": "Paasify (WIP)",
-        "description": "A platform for developers to deploy their apps on the cloud with a single click.",
-        "image": "https://raw.githubusercontent.com/Paasify/Paasify/main/arch.png",
-        "link": "https://github.com/Paasify",
-        "category": "Development (WIP)",
-        "year": 2023,
-        "industry": "Personal Project (WIP)",
-        "tools": ["JavaScript", "Nodejs", "React", "Express", "MongoDB", "Socket.io", "Docker"]
-    },
-    {
-        "id": "alphaq",
-        "title": "alphaQ",
-        "description": "A Web3 Ad Platform made project as a solution for Consensys' Metamask problem statement in Inter IIT Tech Meet 11.0 (2023)",
-        "image": "https://i.imgur.com/8KZz38J.jpeg",
-        "link": "https://github.com/AmreshSinha/alphaQ",
-        "category": "Development",
-        "year": 2023,
-        "industry": "Inter IIT Tech Meet 11.0",
-        "tools": ["Typescript", "Nextjs", "React", "Metamask Snap", "MongoDB"]
-    },
-    {
-        "id": "solar-flare-detector",
-        "title": "Solar Flare Detector",
-        "description": "ISRO's Web Based Solar Bursts in X-Ray Light Curves Detector project done as a solution for ISRO's (Indian Space Research Organization) problem statement in Inter IIT Tech Meet 10.0 (2022)",
-        "image": "https://i.imgur.com/3Br7FJU.png",
-        "link": "https://github.com/search?q=inter-iit-isro+user%3AAmreshSinha&type=Repositories&ref=advsearch&l=&l=",
-        "category": "Development",
-        "year": 2022,
-        "industry": "Inter IIT Tech Meet 10.0",
-        "tools": ["JavaScript", "Python", "React", "Flask", "Recharts.js"]
-    },{
-        "id": "sshot",
-        "title": "SShot",
-        "description": "An API for capturing web screenshots, supporting multiple parameters for changing the settings of the capture.",
-        "image": "https://raw.githubusercontent.com/AmreshSinha/sshot/main/public/images/sshot.png",
-        "link": "https://sshot.fossian.com",
-        "category": "Development",
-        "year": 2022,
-        "industry": "Personal Project",
-        "tools": ["JavaScript", "Nodejs", "Express", "Puppeteer", "Redis", "Docker"]
-    },
-    {
-        "id": "spotify-promoCards-api",
-        "title": "Spotify PromoCards API",
-        "description": "An unofficial Spotify PromoCards generator API inspired by the original Spotify's shareable song cards.",
-        "image": "https://i.imgur.com/0bzeEcN.png",
-        "link": "https://spotify-cards.fossian.com",
-        "category": "Development",
-        "year": 2021,
-        "industry": "Personal Project",
-        "tools": ["JavaScript", "Nodejs", "Express", "Spotify Web API", "node-canvas", "Docker"]
-    }
+	{
+		"id": "leet-buddies",
+		"title": "LeetBuddies",
+		"description": "A chrome extension with 100+ users that helps users to follow their friends on Leetcode and see their problem-solving achievements.",
+		"image": "https://i.imgur.com/6DaZtXc.png",
+		"link": "https://chrome.google.com/webstore/detail/leetbuddies/bdjodimflodichjajpgehjfbdbhkbhnd/",
+		"category": "Development",
+		"year": 2023,
+		"industry": "Personal Project",
+		"tools": ["JavaScript", "Tailwind CSS", "RESTful APIs"],
+		"timeline": "June 2023 - July 2023",
+		"repoLink": "https://github.com/MohitSinghChauhan/LeetBuddies"
+	},
+	{
+		"id": "food-delivery-webapp",
+		"title": "Food Delivery WebApp",
+		"description": "A web application for food delivery using React.js, Redux, and RESTful APIs.",
+		"image": "https://i.imgur.com/axV4VHN.png",
+		"link": "https://swiggy-clone-lime.vercel.app/",
+		"category": "Development",
+		"year": 2023,
+		"industry": "Personal Project",
+		"tools": ["React.js", "Redux", "JavaScript", "RESTful APIs"],
+		"timeline": "March 2023 - April 2023",
+		"repoLink": "https://github.com/MohitSinghChauhan/Swiggy-Clone"
+	},
+	{
+		"id": "youtube-clone",
+		"title": "Adfree YouTube",
+		"description": "A Adfree YouTube like YT Premium built using React.js, MaterialUI, and the RapidAPI YouTube API.",
+		"image": "https://i.imgur.com/UCjuBXE.png",
+		"link": "https://better-youtube-clone.vercel.app/",
+		"category": "Development",
+		"year": 2023,
+		"industry": "Personal Project",
+		"tools": ["React.js", "MaterialUI", "JavaScript", "Rapid YT API"],
+		"timeline": "February 2023 - March 2023",
+		"repoLink": "https://github.com/MohitSinghChauhan/YouTube-Clone"
+	},
+	{
+		"id": "rolling-dice-game",
+		"title": "Rolling Dice Game",
+		"description": "A fully responsive fun dice game called 'Pig Game' implemented using vanilla JavaScript, HTML, and CSS.",
+		"image": "https://i.imgur.com/JXFAGt5.png",
+		"link": "https://dicegame-mohit.netlify.app/",
+		"category": "Development",
+		"year": 2022,
+		"industry": "Personal Project",
+		"tools": ["JavaScript", "HTML", "CSS"],
+		"timeline": "2021",
+		"repoLink": "https://github.com/MohitSinghChauhan/RollingDiceGame"
+	},
+	{
+		"id": "online-resume",
+		"title": "Online-resume",
+		"description": "A fully responsive online resume made with just HTML and Vanilla CSS, Challenge from w3 schools.",
+		"image": "https://i.imgur.com/FwEr0Y9.png",
+		"link": "https://mohitsinghchauhan.github.io/Online-resume/",
+		"category": "Development",
+		"year": 2022,
+		"industry": "Personal Project",
+		"tools": ["HTML", "CSS"],
+		"timeline": "2021",
+		"repoLink": "https://github.com/MohitSinghChauhan/Online-resume"
+	},
+	{
+		"id": "guess-my-number",
+		"title": "Guess My Number",
+		"description": "A project where users can play a number guessing game.",
+		"image": "https://i.imgur.com/6gBRfHz.png",
+		"link": "https://guessthenumberboy.netlify.app/",
+		"category": "Development",
+		"year": 2021,
+		"industry": "Personal Project",
+		"tools": ["HTML", "CSS", "JavaScript"],
+		"timeline": "2021",
+		"repoLink": "https://github.com/MohitSinghChauhan/GuessTheNumber"
+	}
 ]

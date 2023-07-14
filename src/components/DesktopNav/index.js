@@ -8,10 +8,10 @@ export default function DesktopNav({ style }) {
         <NavWrapper style={style}>
             <Link to="/" style={{textDecoration: 'none', color: 'black'}}><Logo /></Link>
             <Links>
-                <NavLink to="/" id="home"><span>01.</span> Home</NavLink>
-                <NavLink to="/works" id="works"><span>02.</span> Works</NavLink>
-                <NavLink to="/blog" id="works"><span>03.</span> Blog</NavLink>
-                <NavLink to="/me"><span>04.</span> Me</NavLink>
+                <NavLink to="/" id="home">Home</NavLink>
+                <NavLink to="/works" id="works"> Works</NavLink>
+                <NavLink to="/blog" id="works">Blog</NavLink>
+                <NavLink to="/me">Me</NavLink>
             </Links>
         </NavWrapper>
     )

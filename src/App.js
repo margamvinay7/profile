@@ -16,7 +16,7 @@ function App() {
 }
 
 function Blog() {
-  window.location.href = 'https://fossian.com';
+  window.location.href = 'https://mohitdotexe.hashnode.dev';
   return null;
 }
 

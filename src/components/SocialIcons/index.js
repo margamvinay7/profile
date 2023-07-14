@@ -10,13 +10,13 @@ export default function SocialIcons({ email, color, pagetype, style }) {
                 <FiAtSign color={color ? `${color}` : null} />
             </a> : null
             }
-            <a href="https://github.com/AmreshSinha" target="_blank" rel="noreferrer">
+            <a href="https://github.com/MohitSinghChauhan/" target="_blank" rel="noreferrer">
                 <FiGithub color={color ? `${color}` : null} />
             </a>
-            <a href="https://twitter.com/aps_codes" target="_blank" rel="noreferrer">
+            <a href="https://twitter.com/MohitSChauhan" target="_blank" rel="noreferrer">
                 <FiTwitter color={color ? `${color}` : null} />
             </a>
-            <a href="https://www.linkedin.com/in/amresh-sinha/" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/i-mohit-singh-chauhan/" target="_blank" rel="noreferrer">
                 <FiLinkedin color={color ? `${color}` : null} />
             </a>
         </SocialIconsContainer>
