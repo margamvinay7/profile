@@ -8,7 +8,7 @@ export default function WorksCard({ item, style, setProject, setShowCard }) {
 	return (
 		<div className='work-card-container'>
 			<div className='icon-container'>
-				<a href='https://github.com/MohitSinghChauhan/' target='_blank' rel='noreferrer'>
+				<a href={item.repoLink} target='_blank' rel='noreferrer'>
 					<FiGithub color='#47FFE9' size='2em' className='icon' style={{ right: '30px' }} />
 				</a>
 				<a href={item.link} target='_blank' rel='noreferrer'>

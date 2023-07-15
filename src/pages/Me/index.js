@@ -17,7 +17,6 @@ import {
 	ZoomOut,
 } from 'react-scroll-motion';
 import { useInView } from 'react-intersection-observer';
-import { osName } from 'react-device-detect';
 import Cursor from '../../components/Cursor';
 import SocialIcons from '../../components/SocialIcons';
 import WinnerBG from '../../images/winner.jpg';
@@ -72,7 +71,7 @@ export default function Me() {
 				<ScrollContainer>
 					<ScrollPage>
 						<Animator animation={batch(Sticky(), Fade(), MoveOut(0, -2000))}>
-							<Text2>Hi.</Text2>
+							<Text2 style={{ fontSize: '4rem' }}>Hi.</Text2>
 						</Animator>
 					</ScrollPage>
 
@@ -142,7 +141,7 @@ export default function Me() {
 								}}></div>
 						</Animator>
 						<Animator animation={batch(StickyIn(), Fade(), MoveIn())}>
-							<Text2 style={{ color: '#D3EBCD' }}>Also, I'm Funny :)</Text2>
+							<Text2 style={{ color: '#D3EBCD' }}>Also, a comedian :)</Text2>
 						</Animator>
 					</ScrollPage>
 
@@ -187,11 +186,7 @@ export default function Me() {
 					<ScrollPage>
 						<Animator animation={batch(Fade(), Sticky())}>
 							<Text2 style={{ fontSize: '3rem' }}>
-<<<<<<< HEAD
-								But, I always wanted a computer{' '}<br />
-=======
-								But, I always wanted a computer{' '}
->>>>>>> 748e6937dc5736d862b3c0426c94219098372ca3
+								But, I always wanted a computer <br />
 								<img
 									alt=''
 									style={{ width: '3.1rem' }}
@@ -207,11 +202,7 @@ export default function Me() {
 						<Animator animation={batch(Fade(), Sticky())}>
 							<Text2 style={{ fontSize: '3rem' }}>
 								Later I get to know, Android is just top of Linux kernel, I just
-<<<<<<< HEAD
-								need to root it to get Sudo Access{' '}<br />
-=======
-								need to root it to get Sudo Access{' '}
->>>>>>> 748e6937dc5736d862b3c0426c94219098372ca3
+								need to root it to get Sudo Access <br />
 								<img
 									alt=''
 									style={{ width: '3rem' }}
@@ -237,18 +228,16 @@ export default function Me() {
 						</Animator>
 					</ScrollPage>
 
+					<ScrollPage></ScrollPage>
+
 					<ScrollPage>
-						<Animator animation={batch(StickyIn(), FadeIn(), ZoomIn())}>
+						<Animator animation={batch(StickyIn(), FadeIn())}>
 							<Text2 style={{ fontSize: '2rem' }}>
 								It was fun, like hacking in-game currencies & Wi-Fi passwords &
 								show-offs
-<<<<<<< HEAD
-								<br /><br />
-								OMG Internet prices then was so{' '}<br />
-=======
 								<br />
-								OMG Internet prices then was so{' '}
->>>>>>> 748e6937dc5736d862b3c0426c94219098372ca3
+								<br />
+								OMG Internet prices then was so <br />
 								<img
 									src='https://cdn3.emoji.gg/emojis/9125-frog-stoned.png'
 									width='64px'
@@ -262,7 +251,7 @@ export default function Me() {
 					<ScrollPage></ScrollPage>
 
 					<ScrollPage>
-						<Animator animation={batch(StickyIn(), Fade(), ZoomIn())}>
+						<Animator animation={batch(StickyIn(), Fade())}>
 							<Text2 style={{ fontSize: '3rem' }}>
 								But then, some bad experiences came into my life.
 							</Text2>
@@ -307,6 +296,8 @@ export default function Me() {
 						</Animator>
 					</ScrollPage>
 
+					<ScrollPage></ScrollPage>
+
 					<ScrollPage>
 						<Animator animation={batch(Fade(), StickyIn())}>
 							<Text2 style={{ fontSize: '2rem' }}>
@@ -325,6 +316,8 @@ export default function Me() {
 							</Text2>
 						</Animator>
 					</ScrollPage>
+
+					<ScrollPage></ScrollPage>
 
 					<ScrollPage>
 						<Animator animation={batch(Fade(), StickyIn())}>
@@ -345,6 +338,8 @@ export default function Me() {
 						</Animator>
 					</ScrollPage>
 
+					<ScrollPage></ScrollPage>
+
 					<ScrollPage>
 						<Animator animation={batch(Fade(), StickyIn())}>
 							<Text2 style={{ fontSize: '2rem' }}>
@@ -353,6 +348,9 @@ export default function Me() {
 							</Text2>
 						</Animator>
 					</ScrollPage>
+
+					<ScrollPage></ScrollPage>
+
 					<ScrollPage>
 						<Animator animation={batch(Fade(), StickyIn())}>
 							<Text2 style={{ fontSize: '2rem' }}>
@@ -378,9 +376,6 @@ export default function Me() {
 								Then, I started with C language as per the curriculum and achieved a
 								10 CGPA in it <br />
 								<br />
-								P.S. My first and last 10 in college :/
-								<br />
-								<br />
 								<br />
 								Again like a<br />{' '}
 								<img
@@ -393,6 +388,8 @@ export default function Me() {
 						</Animator>
 					</ScrollPage>
 
+					<ScrollPage></ScrollPage>
+
 					<ScrollPage>
 						<Animator animation={batch(Fade(), StickyIn())}>
 							<Text2 style={{ fontSize: '2rem' }}>
@@ -400,6 +397,8 @@ export default function Me() {
 							</Text2>
 						</Animator>
 					</ScrollPage>
+
+					<ScrollPage></ScrollPage>
 
 					<ScrollPage>
 						<Animator animation={batch(Fade(), StickyIn())}>
@@ -424,6 +423,8 @@ export default function Me() {
 							</Text2>
 						</Animator>
 					</ScrollPage>
+
+					<ScrollPage></ScrollPage>
 
 					<ScrollPage>
 						<Animator animation={batch(Fade(), Sticky(), Move())}>
@@ -451,6 +452,8 @@ export default function Me() {
 						</Animator>
 					</ScrollPage>
 
+					<ScrollPage></ScrollPage>
+
 					<ScrollPage>
 						<Animator animation={batch(Fade(), StickyIn())}>
 							<Text2 style={{ fontSize: '2rem' }}>
@@ -464,6 +467,8 @@ export default function Me() {
 							</Text2>
 						</Animator>
 					</ScrollPage>
+
+					<ScrollPage></ScrollPage>
 
 					<ScrollPage>
 						<Animator animation={batch(Fade(), StickyIn())}>
@@ -526,16 +531,21 @@ export default function Me() {
 								}}></div>
 						</Animator>
 						<Animator animation={batch(Sticky(), Fade(), MoveIn())}>
-							<Text2 style={{fontSize: '3.5rem', color: '#F2D7D9', mixBlendMode: 'difference'}}>
+							<Text2
+								style={{
+									fontSize: '3.5rem',
+									color: '#F2D7D9',
+									mixBlendMode: 'difference',
+								}}>
 								Became the{' '}
 								<span
 									style={{
 										textDecoration: 'none',
 										background: 'linear-gradient(to right, #DFF6FF, #1363DF)',
 										backgroundRepeat: 'repeat-x',
-										backgroundSize: '100% 5px',
+										backgroundSize: '100% 3px',
 										backgroundPosition: '0 95%',
-										lineHeight: '4rem',
+										lineHeight: '2rem',
 									}}>
 									Vice President of Entrepreneurship Cell
 								</span>{' '}
@@ -545,7 +555,7 @@ export default function Me() {
 										textDecoration: 'none',
 										background: 'linear-gradient(to right, #DFF6FF, #1363DF)',
 										backgroundRepeat: 'repeat-x',
-										backgroundSize: '100% 5px',
+										backgroundSize: '100% 3px',
 										backgroundPosition: '0 95%',
 									}}>
 									Associate Web Developer
@@ -596,8 +606,6 @@ export default function Me() {
 							<Text2 style={{ fontSize: '2rem' }}>/* Third Year Ends */</Text2>
 						</Animator>
 					</ScrollPage>
-
-					<ScrollPage></ScrollPage>
 
 					<ScrollPage>
 						<Animator
@@ -678,7 +686,7 @@ export default function Me() {
 									height: '100%',
 								}}>
 								<Text2 style={{ fontSize: '3.25rem' }}>Me.</Text2>
-								<span style={{ margin:'0', marginTop: '1rem' }}>
+								<span style={{ marginTop: '1rem' }}>
 									<SocialIcons color='#999' email='mohit.chauhan2580@gmail.com' />
 								</span>
 							</div>
@@ -704,7 +712,14 @@ export default function Me() {
 					</ScrollPage>
 
 					<ScrollPage>
-						<Animator animation={Sticky()} style={{margin:'0'}}>
+						<Animator
+							animation={Sticky()}
+							style={{
+								margin: '0',
+								'@media (max-width: 600px)': {
+									marginTop: '40px',
+								},
+							}}>
 							<ErrorWindows />
 						</Animator>
 					</ScrollPage>
@@ -758,7 +773,7 @@ export default function Me() {
 							<div
 								ref={ref}
 								style={{ width: '100vw', height: '100vh', background: '#000' }}>
-								{inView ? <RickRoll os={osName} /> : null}
+								{inView ? <RickRoll /> : null}
 							</div>
 						</Animator>
 					</ScrollPage>
@@ -825,16 +840,11 @@ const Text2 = styled.h2`
 	font-weight: 600;
 	@media screen and (max-width: 768px) {
 		font-size: 3rem !important;
+		line-height: 2rem !important;
 	}
-<<<<<<< HEAD
 	@media screen and (max-width: 600px) {
-		font-size: 1.25rem !important;
+		font-size: 1.8rem !important;
 		margin-inline: -40px;
-		margin-top: -40px;
-=======
-	@media screen and (max-width: 480px) {
-		font-size: 1.25rem !important;
-		margin: -30px;
->>>>>>> 748e6937dc5736d862b3c0426c94219098372ca3
+		margin-top: -25px;
 	}
 `;
