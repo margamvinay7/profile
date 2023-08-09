@@ -1,5 +1,18 @@
 [
 	{
+		"id": "agency-insider",
+		"title": "The Agency Insider",
+		"description": "The Agency Insider: A Next.js v13.4 powered fusion of agency website and blogging platform, featuring MongoDB for efficient blog storage and NextAuth.js for secure user authentication. Server-side rendering and static site generation ensure optimal performance.",
+		"image": "https://i.imgur.com/5r0nADh.png",
+		"link": "https://the-agency-insider.vercel.app/",
+		"category": "Development",
+		"year": 2023,
+		"industry": "Personal Project",
+		"tools": ["Next.js", "NextAuth.js", "MongoDB", "CSS", "RESTful APIs"],
+		"timeline": "July 2023 - Aug 2023",
+		"repoLink": "https://github.com/MohitSinghChauhan/The-Agency-Insider"
+	},
+	{
 		"id": "leet-buddies",
 		"title": "LeetBuddies",
 		"description": "A chrome extension with 100+ users that helps users to follow their friends on Leetcode and see their problem-solving achievements.",
@@ -15,13 +28,13 @@
 	{
 		"id": "food-delivery-webapp",
 		"title": "Food Delivery WebApp",
-		"description": "A web application for food delivery using React.js, Redux, and RESTful APIs.",
+		"description": "Food Delivery Web Application crafted with React.js, Redux, TailwindCSS, and RESTful APIs, this offers seamless reactive and responsive UI, combining a responsive interface with state management for a smooth user experience.",
 		"image": "https://i.imgur.com/axV4VHN.png",
 		"link": "https://swiggy-clone-lime.vercel.app/",
 		"category": "Development",
 		"year": 2023,
 		"industry": "Personal Project",
-		"tools": ["React.js", "Redux", "JavaScript", "RESTful APIs"],
+		"tools": ["React.js", "Redux","Tailwind CSS", "JavaScript", "RESTful APIs"],
 		"timeline": "March 2023 - April 2023",
 		"repoLink": "https://github.com/MohitSinghChauhan/Swiggy-Clone"
 	},
