@@ -9,7 +9,12 @@ export default function WorksCard({ item, style, setProject, setShowCard }) {
 		<div className='work-card-container'>
 			<div className='icon-container'>
 				<a href={item.repoLink} target='_blank' rel='noreferrer'>
-					<FiGithub color='#47FFE9' size='2em' className='icon' style={{ right: '30px' }} />
+					<FiGithub
+						color='#47FFE9'
+						size='2em'
+						className='icon'
+						style={{ right: '30px' }}
+					/>
 				</a>
 				<a href={item.link} target='_blank' rel='noreferrer'>
 					<FaEye color='#47FFE9' size='2em' className='icon' style={{ right: '80px' }} />
@@ -30,8 +35,8 @@ export default function WorksCard({ item, style, setProject, setShowCard }) {
 					<h3>{item.year}</h3>
 					<h1>{item.title}</h1>
 					<div>
-						<h3>{item.category}</h3>
-						<h3>{item.industry}</h3>
+						<h3 className='tools'>Built using {item.tools.join(', ')}</h3>
+						{/* <h3>{item.industry}</h3> */}
 						<div style={{ width: '50px', height: '50px' }}></div>
 					</div>
 				</Card>
@@ -73,6 +78,11 @@ const CardWrapper = styled(a.a)`
 		div > h3 {
 			transform: translateX(32px);
 		}
+
+		.tools {
+			color: #fff;
+		}
+		
 		@media screen and (max-width: 767px) {
 			h3 {
 				transform: unset;
@@ -140,15 +150,21 @@ const Card = styled.div`
 	min-height: 200px;
 	height: fit-content;
 	box-sizing: border-box;
+
+	.tools {
+		font-size: 20px;
+		color: #47ffe9;
+	}
+
 	h3 {
-		font-size: 12px;
+		font-size: 16px;
+		margin-top: 10px;
 		font-family: system-ui;
-		text-transform: uppercase;
 		white-space: pre-wrap;
-		line-height: 14px;
-		font-weight: 300;
+		line-height: 28px;
+		font-weight: 500;
 		letter-spacing: 0;
-		max-width: 500px;
+		max-width: 900px;
 		transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
 	}
 	h1 {
