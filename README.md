@@ -1,7 +1,6 @@
 # Developer Portfolio
 
-## Tech used (ง •̀_•́)ง
-
+## Tech used 
 - React.js
 - Styled-Component
 - Three.js (Will be used in About me page)
