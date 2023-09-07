@@ -1,5 +1,18 @@
 [
 	{
+		"id": "njs",
+		"title": "Namaste JavaScript Handbook",
+		"description": "The Namaste JavaScript Handbook - my gift to the JS community condensing Akshay Saini's 40+ hour course into text guides optimized for readability. Crafted to identify and explain key concepts. This free reference has become highly popular with over 10,000 monthly visitors deepening their JavaScript knowledge.",
+		"image": "https://i.imgur.com/7Ft3ry1.png",
+		"link": "https://namaste-javascript-handbook.vercel.app/",
+		"category": "Development",
+		"year": 2023,
+		"industry": "Personal Project",
+		"tools": ["React.js", "Docusurus", "CSS"],
+		"timeline": "Aug 2023 - Sept 2023",
+		"repoLink": "https://github.com/MohitSinghChauhan/Namaste-Javascript-Handbook"
+	},
+	{
 		"id": "agency-insider",
 		"title": "The Agency Insider",
 		"description": "The Agency Insider: A Next.js v13.4 powered fusion of agency website and blogging platform, featuring MongoDB for efficient blog storage and NextAuth.js for secure user authentication. Server-side rendering and static site generation ensure optimal performance.",
