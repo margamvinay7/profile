@@ -18,10 +18,10 @@ export default function Search({ winkconfig, querychange, autofocus }) {
             });
         });
     }
-    
+    // eslint-disable-next-line
     useEffect(() => {
         querychange(search(winkconfig))
-    }, [query])
+    }, [query,])
     // const resultObj = search("string 1", array);
     return (
         <Wrapper>

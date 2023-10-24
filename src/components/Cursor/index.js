@@ -18,7 +18,7 @@ export default function Cursor({ project }) {
     const _y = useRef(0);
 
     const requestRef = useRef(null);
-
+// eslint-disable-next-line
     useEffect(() => {
         document.addEventListener('mousedown', mouseOverEvent);
         document.addEventListener('mouseup', mouseOutEvent);
