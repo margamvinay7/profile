@@ -2,6 +2,7 @@
 
 ## Tech used 
 - React.js
+- Framer motion
 - Styled-Component
 - Three.js (Will be used in About me page)
 - Lenis (for smooth scrolling, will be added)
