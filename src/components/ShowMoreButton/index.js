@@ -14,9 +14,9 @@ export default function ShowMoreButton({ style }) {
 const ButtonWrapper = styled(a.a)`
 	/* display: flex; */
 	text-decoration: none;
-	background: linear-gradient(95.44deg, #f27121 4.35%, #e94057 70.16%, #8a2387 133.82%);
+	background: linear-gradient(85.44deg, #f27156 4.35%, #e94077 70.16%, #8a2355 133.82%);
 	border: 0.125em solid #121212;
-	border-radius: 0.375em;
+	border-radius: 0.455em;
 	padding: 0.75em 1.5em;
 	font-size: 16px;
 	font-weight: 700;

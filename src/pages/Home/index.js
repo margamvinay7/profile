@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Typed from 'typed.js';
 import DesktopNav from '../../components/DesktopNav';
 import ShowMoreButton from '../../components/ShowMoreButton';
-import bgDesktop from '../../images/bgDesktop_Optimized.webp';
+import bgDesktop from '../../images/bg1.jpg';
 import SocialIcons from '../../components/SocialIcons';
 import Cursor from '../../components/Cursor';
 import '../../App.css'
@@ -42,26 +42,16 @@ export default function Home() {
 		}
 	}, [windowSize]);
 
-	// useEffect(() => {
-	//   const handleWindowMouseMove = event => {
-	//     console.log(event.screenX, event.screenY);
-	//     movingBackground.current.style.backgroundPosition = `top ${event.screenY} left ${event.screenX}`
-	//   };
-	//   window.addEventListener('mousemove', handleWindowMouseMove);
-
-	//   return () => {
-	//     window.removeEventListener('mousemove', handleWindowMouseMove);
-	//   };
-	// }, []);
-
+	
+	const myNameParent=useRef(null)
 	const el = useRef(null);
 	const elParent = useRef(null);
-
+	const myname=useRef(null);
 	useEffect(() => {
 		var temp = 0;
 		const stringColors = ['#47FFE9', '#00FFAB', '#F7EC09', '#F9D371'];
 		const typed = new Typed(el.current, {
-			strings: ['developer', 'open sourcer', 'student'],
+			strings: ['Full stack developer', 'student'],
 			shuffle: false,
 			startDelay: 500,
 			typeSpeed: 60,
@@ -70,6 +60,31 @@ export default function Home() {
 			loop: true,
 			preStringTyped: function (arrayPos, self) {
 				elParent.current.style.color = stringColors[temp];
+				temp += 1;
+			},
+			onLastStringBackspaced: function (self) {
+				temp = 0;
+			},
+		});
+
+		// Destroying
+		return () => {
+			typed.destroy();
+		};
+	}, []);
+	useEffect(() => {
+		var temp = 0;
+		const stringColors = ['#47FFE9', '#00FFAB', '#F7EC09', '#F9D371'];
+		const typed = new Typed(myname.current, {
+			strings: ['Margam Vinay'],
+			shuffle: false,
+			startDelay: 500,
+			typeSpeed: 60,
+			backSpeed: 50,
+			backDelay: 1000,
+			loop: true,
+			preStringTyped: function (arrayPos, self) {
+				myNameParent.current.style.color = stringColors[temp];
 				temp += 1;
 			},
 			onLastStringBackspaced: function (self) {
@@ -145,7 +160,7 @@ export default function Home() {
 		from: { opacity: 0, x: 20, height: 0 },
 		to: { opacity: 1, x: 0, height: 110 },
 	});
-	const descLine2List = 'Mohit Chauhan,'.split(' ');
+	const descLine2List = 'Margam Vinay,'.split(' ');
 	const descLine3Anim = useSpring({
 		ref: descLine3Ref,
 		config: { mass: 5, tension: 2000, friction: 200 },
@@ -189,8 +204,10 @@ export default function Home() {
 							))}
 							<br />
 							{descLine2Anim.map(({ ...style }, index) => (
-								<a.span style={style} key={index}>
-									{descLine2List[index]}{' '}
+								<a.span style={style} key={index} ref={myNameParent}>
+									<span ref={myname} id='cursorHover'>
+									
+									</span>
 								</a.span>
 							))}
 							<br />
@@ -198,14 +215,14 @@ export default function Home() {
 								a{' '}
 								<div style={{ display: 'inline' }} ref={elParent}>
 									<span ref={el} id='cursorHover'>
-										developer
+										Full stack developer
 									</span>
 								</div>
 							</a.span>
 						</h1>
 
 							<a.h2 className="tagline" style={descLine4Anim}>
-								Unlocking Innovation Through Code.
+								Exploring the coding
 							</a.h2>
 
 						<ShowMoreButton style={workButtonAnim} />
@@ -213,7 +230,7 @@ export default function Home() {
 					{/* space for right section  */}
 				</MainAreaWrapper>
 				<FooterWrapper>
-					{!mobile ? <SocialIcons style={socialIconsAnim} /> : <SocialIcons style={socialIconsAnim} email='mohit.chauhan2580@gmail.com' />}
+					{!mobile ? <SocialIcons style={socialIconsAnim} email='margamvinay77@gmail.com' /> : <SocialIcons style={socialIconsAnim} email='margamvinay77@gmail.com' />}
 					<Year style={socialIconsAnim}>
 						20
 						<br />

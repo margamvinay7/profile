@@ -27,9 +27,7 @@ export default function DesktopNav({ style }) {
 						{' '}
 						Works
 					</NavLink>
-					<NavLink to='/blog' id='works'>
-						Blog
-					</NavLink>
+					<NavLink to='/skills'>Skills</NavLink>
 					<NavLink to='/me'>Me</NavLink>
 				</Links>
 			</LinksWrapper>

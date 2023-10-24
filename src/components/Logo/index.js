@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export default function Logo() {
     return (
-        <LogoWrapper><h1>m</h1></LogoWrapper>
+        <LogoWrapper><h1>v</h1></LogoWrapper>
     )
 }
 
