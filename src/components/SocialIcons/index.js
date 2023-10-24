@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FiAtSign, FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
+import { FiAtSign, FiGithub, FiLinkedin } from "react-icons/fi";
 import { a } from "@react-spring/web";
 
 export default function SocialIcons({ email, color, pagetype, style }) {

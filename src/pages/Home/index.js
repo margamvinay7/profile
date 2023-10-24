@@ -160,7 +160,7 @@ export default function Home() {
 		from: { opacity: 0, x: 20, height: 0 },
 		to: { opacity: 1, x: 0, height: 110 },
 	});
-	const descLine2List = 'Margam Vinay,'.split(' ');
+	
 	const descLine3Anim = useSpring({
 		ref: descLine3Ref,
 		config: { mass: 5, tension: 2000, friction: 200 },

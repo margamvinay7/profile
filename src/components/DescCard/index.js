@@ -17,7 +17,7 @@ export default function DescCard({ project, cardRef }) {
     }
   }, [project]);
   if (project) {
-    const { title, description, image } = project;
+    const { title, description } = project;
     return (
       <CardWrapper ref={cardRef} style={{ width: !imgLoading ? '15vw' : "unset" }}>
         {imgLoading ? (

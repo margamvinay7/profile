@@ -14,15 +14,13 @@ import {
 	ZoomIn,
 	Move,
 	MoveIn,
-	ZoomOut,
+	
 } from 'react-scroll-motion';
-import { useInView } from 'react-intersection-observer';
+
 import Cursor from '../../components/Cursor';
-import SocialIcons from '../../components/SocialIcons';
-import WinnerBG from '../../images/winner.jpg';
+
 // import RickRoll from '../../images/Rick-Roll.mp4';
-import RickRoll from '../../components/RickRoll';
-import ErrorWindows from '../../components/ErrorWindows';
+
 
 
 import React from 'react'
@@ -69,10 +67,7 @@ export default function Skill() {
 	}, [windowSize]);
 
 	
-	const { ref, inView } = useInView({
-		/* Optional options */
-		threshold: 0,
-	});
+	
 
 	return (
 		<>
