@@ -20,7 +20,7 @@ function App() {
 }
 
 function Blog() {
-  window.location.href = 'https://mohitdotexe.hashnode.dev';
+  window.location.href = 'https://margamvinay.hashnode.dev';
   return null;
 }
 
